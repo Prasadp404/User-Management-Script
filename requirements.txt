@@ -1,0 +1,15 @@
+# requirements.txt
+# Python dependencies for User Management Script
+
+# No external dependencies required for basic version
+# The script uses only Python standard library:
+# - sqlite3 (built-in)
+# - hashlib (built-in)
+# - secrets (built-in)
+# - os (built-in)
+# - getpass (built-in)
+
+# Optional: For production use, consider:
+# bcrypt==4.0.1  # For stronger password hashing
+# argon2-cffi==21.3.0  # Alternative password hashing
+# python-dotenv==1.0.0  # For .env file support

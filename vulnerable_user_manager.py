@@ -164,9 +164,13 @@ def main():
     print("\n" + "="*70)
     print("DEMONSTRATING VULNERABILITY 2: SQL INJECTION")
     print("="*70)
-    print("\nTrying SQL injection payload: admin' OR '1'='1")
+    print("\nTrying SQL injection payload: admin' --")
+    print("Explanation: The '--' comments out the password check")
+    login("admin' --", "anything")
     
-    login("admin' OR '1'='1", "anything")
+    print("\nTrying another SQL injection: ' OR '1'='1' --")
+    print("Explanation: Always true condition with comment")
+    login("' OR '1'='1' --", "anything")
     
     # VULNERABILITY 3: Demonstrate insecure file handling
     print("\n" + "="*70)
@@ -187,7 +191,7 @@ def main():
     print("\n4. Attempting to read sensitive system file...")
     print("C:\\Windows\\System32\\drivers\\etc\\hosts")
     # This will fail on most systems due to permissions, but demonstrates the vulnerability
-    import_user_data("C:\\..\\..\\..\\..\\hosts")
+    import_user_data("C:\\Windows\\System32\\drivers\\etc\\hosts")
     
     # VULNERABILITY 1: Show hardcoded credentials
     print("\n" + "-"*70)

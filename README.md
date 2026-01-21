@@ -221,7 +221,7 @@ Test 1: Hardcoded Credentials
 
 #Anyone with source code access can see:
 ADMIN_PASSWORD = "admin123"
-API_KEY = "sk_live_1234567890abcdef"
+API_KEY = "01010111EZ000110101"
 
 Test 2: Plain Text Passwords
 #Run vulnerable version

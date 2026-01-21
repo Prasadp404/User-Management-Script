@@ -9,6 +9,8 @@ The User Management Script is a simple command-line application that:
 •	Provides login functionality
 •	Lists all registered users
 
+# Note : For better understanding please check Readme.docx
+
 The vulnerable version demonstrates 3 critical security issues commonly found in real-world applications.
 
 All 3 Vulnerabilities Explained:
